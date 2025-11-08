@@ -629,21 +629,23 @@ body.dark-mode .tag {
   color: #ffffff;
 }
 
-/* Project card fade animation */
+/* FIXED: Project card filtering - NO position: absolute */
 .project-card {
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
+  opacity: 1;
+  transform: scale(1);
+  height: auto;
+  visibility: visible;
 }
 
 .project-card.hidden {
-  opacity: 0;
-  transform: scale(0.8);
-  position: absolute;
-  pointer-events: none;
+  display: none; /* This completely removes it from layout */
 }
 
+/* FIXED: Projects container maintains proper layout */
 .projects-container {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  min-height: 200px; /* Prevents container from collapsing */
 }

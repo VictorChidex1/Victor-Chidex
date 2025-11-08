@@ -124,7 +124,7 @@ if (themeToggle) {
   });
 }
 
-// Project Filtering System
+// Project Filtering System - FIXED VERSION
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
 
@@ -138,15 +138,27 @@ if (filterButtons.length > 0) {
 
       const filterValue = button.getAttribute("data-filter");
 
-      // Filter projects
+      // Filter projects with smooth transition
       projectCards.forEach((card) => {
         if (
           filterValue === "all" ||
           card.getAttribute("data-category") === filterValue
         ) {
+          // Show the card
           card.classList.remove("hidden");
+          // Add slight delay for staggered animation
+          setTimeout(() => {
+            card.style.opacity = "1";
+            card.style.transform = "scale(1)";
+          }, 100);
         } else {
-          card.classList.add("hidden");
+          // Hide the card
+          card.style.opacity = "0";
+          card.style.transform = "scale(0.8)";
+          // After animation completes, add hidden class
+          setTimeout(() => {
+            card.classList.add("hidden");
+          }, 400);
         }
       });
     });
