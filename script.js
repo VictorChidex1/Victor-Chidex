@@ -186,4 +186,137 @@ document.querySelectorAll(".skill-progress").forEach((skill) => {
   skillObserver.observe(skill);
 });
 
+// Contact Form with Formspree
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+    const submitBtn = this.querySelector(".submit-btn");
+
+    // Reset errors
+    clearErrors();
+
+    // Validate form
+    let isValid = true;
+
+    if (name === "") {
+      showError("nameError", "Please enter your name");
+      isValid = false;
+    }
+
+    if (email === "") {
+      showError("emailError", "Please enter your email");
+      isValid = false;
+    } else if (!isValidEmail(email)) {
+      showError("emailError", "Please enter a valid email");
+      isValid = false;
+    }
+
+    if (message === "") {
+      showError("messageError", "Please enter your message");
+      isValid = false;
+    } else if (message.length < 10) {
+      showError("messageError", "Message must be at least 10 characters");
+      isValid = false;
+    }
+
+    // If form is valid, submit to Formspree
+    if (isValid) {
+      // Show loading state
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      try {
+        // Use Formspree to handle the submission
+        const formData = new FormData(this);
+
+        const response = await fetch(this.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          showSuccessMessage(
+            "Thank you! Your message has been sent successfully. I'll get back to you soon!"
+          );
+          this.reset();
+        } else {
+          throw new Error("Form submission failed");
+        }
+      } catch (error) {
+        showSuccessMessage(
+          "Sorry, there was an error sending your message. Please try again or email me directly.",
+          true
+        );
+      } finally {
+        // Reset button state
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send Message";
+      }
+    }
+  });
+}
+
+function showError(elementId, message) {
+  const errorElement = document.getElementById(elementId);
+  errorElement.textContent = message;
+
+  // Add error styling to input
+  const inputId = elementId.replace("Error", "");
+  const inputElement = document.getElementById(inputId);
+  inputElement.style.borderColor = "#e74c3c";
+}
+
+function clearErrors() {
+  const errorElements = document.querySelectorAll(".error-message");
+  errorElements.forEach((element) => {
+    element.textContent = "";
+  });
+
+  // Reset input borders
+  const inputs = document.querySelectorAll(
+    ".form-group input, .form-group textarea"
+  );
+  inputs.forEach((input) => {
+    input.style.borderColor = "#e9ecef";
+  });
+}
+
+function isValidEmail(email) {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+function showSuccessMessage() {
+  // Remove existing success message if any
+  const existingSuccess = document.querySelector(".form-success");
+  if (existingSuccess) {
+    existingSuccess.remove();
+  }
+
+  // Create success message
+  const successMessage = document.createElement("div");
+  successMessage.className = "form-success";
+  successMessage.textContent =
+    "Thank you! Your message has been sent successfully.";
+
+  // Insert before the form
+  const form = document.querySelector(".contact-form");
+  form.parentNode.insertBefore(successMessage, form);
+
+  // Remove success message after 5 seconds
+  setTimeout(() => {
+    successMessage.remove();
+  }, 5000);
+}
+
 console.log("Welcome to Victor Chidex Portfolio! 🚀");
