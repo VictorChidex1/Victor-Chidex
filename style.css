@@ -768,28 +768,47 @@ body.dark-mode .resume-btn {
   background: linear-gradient(135deg, #5a52d5 0%, #6c63ff 100%);
 }
 
-/* Skill Level Indicators */
+/* Skill Level Indicators - IMPROVED SPACING */
 .skills-container {
-  max-width: 600px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
 .skill-item {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .skill-info {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
   font-weight: bold;
+}
+
+.skill-info span:first-child {
+  font-size: 1.1rem;
+  color: #333;
+  flex: 1;
+}
+
+.skill-info span:last-child {
+  font-size: 1rem;
+  color: #6c63ff;
+  background: rgba(108, 99, 255, 0.1);
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  min-width: 60px;
+  text-align: center;
+  margin-left: 1rem;
 }
 
 .skill-bar {
   background: #e9ecef;
   border-radius: 10px;
-  height: 10px;
+  height: 12px;
   overflow: hidden;
+  position: relative;
 }
 
 .skill-progress {
@@ -798,11 +817,47 @@ body.dark-mode .resume-btn {
   width: 0;
   border-radius: 10px;
   transition: width 1.5s ease-in-out;
+  position: relative;
+}
+
+/* Add a subtle shine effect to progress bars */
+.skill-progress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Dark mode for skill bars */
 body.dark-mode .skill-bar {
   background: #3d3d3d;
+}
+
+body.dark-mode .skill-info span:first-child {
+  color: #ffffff;
+}
+
+body.dark-mode .skill-info span:last-child {
+  background: rgba(108, 99, 255, 0.2);
+  color: #8b84ff;
 }
 
 /* Footer Social Icons */
