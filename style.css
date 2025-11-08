@@ -519,3 +519,131 @@ body {
     opacity: 1;
   }
 }
+
+/* ===== DARK MODE STYLES ===== */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+body.dark-mode .navbar {
+  background: #2d2d2d;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .logo {
+  color: #6c63ff;
+}
+
+body.dark-mode .nav-menu a {
+  color: #ffffff;
+}
+
+body.dark-mode .nav-menu a:hover {
+  color: #6c63ff;
+}
+
+body.dark-mode .project-card {
+  background: #2d2d2d;
+  color: #ffffff;
+}
+
+body.dark-mode .footer {
+  background: #2d2d2d;
+}
+
+body.dark-mode .skill {
+  background: #5a52d5;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  margin-right: 1rem;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile adjustment for theme toggle */
+@media screen and (max-width: 768px) {
+  .theme-toggle {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+/* Project Filters */
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.5rem 1.5rem;
+  background: #f8f9fa;
+  border: 2px solid #6c63ff;
+  color: #6c63ff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #6c63ff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Project Tags */
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #e9ecef;
+  color: #495057;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+body.dark-mode .tag {
+  background: #3d3d3d;
+  color: #ffffff;
+}
+
+/* Project card fade animation */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card.hidden {
+  opacity: 0;
+  transform: scale(0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+.projects-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}

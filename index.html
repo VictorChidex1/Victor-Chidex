@@ -21,6 +21,15 @@
       <div class="nav-container">
         <div class="logo">Victor Chidex</div>
 
+        <!-- Dark/Light Mode Toggle -->
+        <button
+          id="themeToggle"
+          class="theme-toggle"
+          aria-label="Toggle dark mode"
+        >
+          🌙
+        </button>
+
         <!-- Hamburger Menu for Mobile -->
         <div class="hamburger" id="hamburger">
           <span></span>
@@ -78,27 +87,60 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
       <h2>My Projects</h2>
+
+      <!-- Project Filters -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+
       <div class="projects-container">
-        <div class="project-card">
+        <div class="project-card" data-category="web">
           <h3>Portfolio Website</h3>
           <p>
             The very website you're viewing right now! Built with pure HTML,
             CSS, and JavaScript.
           </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>Portfolio Website</h3>
+        <div class="project-card" data-category="web">
+          <h3>E-Commerce Store</h3>
           <p>
-            The very website you're viewing right now! Built with pure HTML,
-            CSS, and JavaScript.
+            A full-featured online store with shopping cart and payment
+            integration.
           </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+          </div>
         </div>
-        <div class="project-card">
-          <h3>More Projects Coming Soon!</h3>
+        <div class="project-card" data-category="mobile">
+          <h3>Fitness Tracker App</h3>
           <p>
-            I'm currently working on amazing projects that will be displayed
-            here.
+            Mobile application for tracking workouts and nutrition with
+            beautiful charts.
           </p>
+          <div class="project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+        <div class="project-card" data-category="design">
+          <h3>UI/UX Design System</h3>
+          <p>
+            Complete design system with components, patterns, and style guide.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">Design</span>
+          </div>
         </div>
       </div>
     </section>

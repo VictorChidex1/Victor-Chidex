@@ -93,4 +93,64 @@ if (backToTopButton) {
   });
 }
 
+// Dark/Light Mode Toggle
+const themeToggle = document.getElementById("themeToggle");
+
+if (themeToggle) {
+  // Check for saved theme or prefer color scheme
+  const savedTheme =
+    localStorage.getItem("theme") ||
+    (window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light");
+
+  // Apply the saved theme
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    themeToggle.textContent = "☀️";
+  }
+
+  // Toggle theme
+  themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      themeToggle.textContent = "☀️";
+      localStorage.setItem("theme", "dark");
+    } else {
+      themeToggle.textContent = "🌙";
+      localStorage.setItem("theme", "light");
+    }
+  });
+}
+
+// Project Filtering System
+const filterButtons = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll(".project-card");
+
+if (filterButtons.length > 0) {
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from all buttons
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      // Add active class to clicked button
+      button.classList.add("active");
+
+      const filterValue = button.getAttribute("data-filter");
+
+      // Filter projects
+      projectCards.forEach((card) => {
+        if (
+          filterValue === "all" ||
+          card.getAttribute("data-category") === filterValue
+        ) {
+          card.classList.remove("hidden");
+        } else {
+          card.classList.add("hidden");
+        }
+      });
+    });
+  });
+}
+
 console.log("Welcome to Victor Chidex Portfolio! 🚀");
