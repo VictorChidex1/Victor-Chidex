@@ -165,4 +165,25 @@ if (filterButtons.length > 0) {
   });
 }
 
+// Animate skill bars when they come into view
+const skillObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const skillProgress = entry.target;
+        const width = skillProgress.getAttribute("data-width");
+        setTimeout(() => {
+          skillProgress.style.width = width;
+        }, 300);
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+// Observe all skill progress bars
+document.querySelectorAll(".skill-progress").forEach((skill) => {
+  skillObserver.observe(skill);
+});
+
 console.log("Welcome to Victor Chidex Portfolio! 🚀");

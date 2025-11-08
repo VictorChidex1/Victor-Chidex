@@ -739,3 +739,126 @@ body.dark-mode .tag {
   gap: 2rem;
   min-height: 200px; /* Prevents container from collapsing */
 }
+
+/* Resume Download Button */
+.resume-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.resume-btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Dark mode for resume button */
+body.dark-mode .resume-btn {
+  background: linear-gradient(135deg, #5a52d5 0%, #6c63ff 100%);
+}
+
+/* Skill Level Indicators */
+.skills-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  margin-bottom: 1.5rem;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.skill-bar {
+  background: #e9ecef;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  background: linear-gradient(90deg, #6c63ff, #8b84ff);
+  height: 100%;
+  width: 0;
+  border-radius: 10px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Dark mode for skill bars */
+body.dark-mode .skill-bar {
+  background: #3d3d3d;
+}
+
+/* Footer Social Icons */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.social-links a:hover {
+  transform: translateY(-3px);
+}
+
+/* Mobile footer */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+/* Smooth Page Transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* Loading animation for better UX */
+.page-load {
+  animation: pageLoad 0.8s ease-out;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
