@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects - Victor Chidex</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.ico" />
+    <link
+      rel="alternate icon"
+      type="image/png"
+      href="assets/images/favicon.ico"
+      sizes="32x32"
+    />
+    <link rel="apple-touch-icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">Victor Chidex</a>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              🌙
+            </button>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- All Projects Section -->
+    <section class="all-projects">
+      <div class="container">
+        <h1>All Projects</h1>
+        <p class="page-subtitle">
+          Complete portfolio of my work across web development, mobile apps, and
+          full-stack applications.
+        </p>
+
+        <!-- Project Filters -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+
+        <!-- All Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Portfolio Website -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img
+                src="assets/images/portfolio-website.png"
+                alt="Portfolio Website"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/portfolio-website.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a
+                    href="https://victorchidex1.github.io/Victor-Chidex/"
+                    target="_blank"
+                    class="project-link live-demo"
+                  >
+                    🌐 Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Website</h3>
+              <p>
+                Responsive portfolio with dark mode, project filtering, and
+                smooth animations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Commerce Store -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img
+                src="assets/images/E-Commerce-Store.png"
+                alt="E-Commerce Store"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/ecommerce-store.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Store</h3>
+              <p>
+                Full-featured online store with shopping cart and secure
+                checkout.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fitness Tracker App -->
+          <div class="project-card" data-category="mobile">
+            <div class="project-image">
+              <img
+                src="assets/images/Fitness-Tracker-App.png"
+                alt="Fitness Tracker"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/fitness-tracker.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Fitness Tracker App</h3>
+              <p>
+                Mobile app for tracking workouts and nutrition with analytics.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">Charts.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SaaS Product -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img
+                src="assets/images/SaaS-Product.png"
+                alt="SaaS Product"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/saas-product.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>SaaS Product Showcase</h3>
+              <p>
+                Modern one-page website for B2B SaaS with engaging animations.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Animations</span>
+                <span class="tag">UI/UX</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EventFlow -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image">
+              <img
+                src="assets/images/Event-Booking-Platform.png"
+                alt="EventFlow"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/eventflow.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>EventFlow</h3>
+              <p>
+                Event planning platform with ticket sales and real-time
+                management.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- EstateFind -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image">
+              <img
+                src="assets/images/Property-Listing.png"
+                alt="EstateFind"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/estatefind.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>EstateFind</h3>
+              <p>
+                Real estate marketplace with advanced filtering and virtual
+                tours.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Mapbox</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DataVision -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img
+                src="assets/images/Business-Analytics.png"
+                alt="DataVision"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/datavision.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>DataVision</h3>
+              <p>
+                Business analytics dashboard with real-time data visualization.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">D3.js</span>
+                <span class="tag">Chart.js</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FoodieDelight -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image">
+              <img
+                src="assets/images/Food-Delivery.png"
+                alt="FoodieDelight"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/foodiedelight.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>FoodieDelight</h3>
+              <p>Food delivery platform with recipes and order tracking.</p>
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Express.js</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- TaskFlow -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img
+                src="assets/images/Task-manager.png"
+                alt="TaskFlow"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/taskflow.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>TaskFlow</h3>
+              <p>Project management app with drag-and-drop collaboration.</p>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Weather Dashboard -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img
+                src="assets/images/weather-app.png"
+                alt="Weather Dashboard"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/weather-dashboard.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Weather Dashboard</h3>
+              <p>Real-time weather app with forecasts and animations.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">API</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- VibeCraft -->
+          <div class="project-card" data-category="web">
+            <div class="project-image">
+              <img
+                src="assets/images/brand-generator.png"
+                alt="VibeCraft"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/vibecraft.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>VibeCraft</h3>
+              <p>AI-powered brand identity generator with design tools.</p>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">AI API</span>
+                <span class="tag">Canvas</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SoundScape -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-image">
+              <img
+                src="assets/images/music-streaming.png"
+                alt="SoundScape"
+                loading="lazy"
+              />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a
+                    href="projects/soundscape.html"
+                    class="project-link view-details"
+                  >
+                    📖 View Details
+                  </a>
+                  <a href="#" class="project-link live-demo"> 🌐 Live Demo </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>SoundScape</h3>
+              <p>Music streaming platform with personalized recommendations.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Victor Chidex. Built with 💜 and code.</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <span>🐙</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/your-profile"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <span>💼</span>
+          </a>
+          <a
+            href="https://twitter.com/your-profile"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <span>🐦</span>
+          </a>
+          <a href="mailto:your-email@example.com" aria-label="Email">
+            <span>📧</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+  </body>
+</html>
