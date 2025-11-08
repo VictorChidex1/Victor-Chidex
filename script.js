@@ -1,10 +1,18 @@
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
+    // Only prevent default for same-page links
+    if (this.getAttribute("href").startsWith("#")) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }
+    // External links (with target="_blank") will work normally
   });
 });
 
