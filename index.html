@@ -19,16 +19,26 @@
     <!-- Navigation -->
     <nav class="navbar">
       <div class="nav-container">
+        <!-- Logo -->
         <div class="logo">Victor Chidex</div>
 
-        <!-- Dark/Light Mode Toggle -->
-        <button
-          id="themeToggle"
-          class="theme-toggle"
-          aria-label="Toggle dark mode"
-        >
-          🌙
-        </button>
+        <!-- Navigation Menu with Theme Toggle INSIDE -->
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              🌙
+            </button>
+          </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
         <!-- Hamburger Menu for Mobile -->
         <div class="hamburger" id="hamburger">
@@ -36,14 +46,6 @@
           <span></span>
           <span></span>
         </div>
-
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
       </div>
     </nav>
 
