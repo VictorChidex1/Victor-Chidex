@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker App | Victor Chidera</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.ico" />
+    <link
+      rel="alternate icon"
+      type="image/png"
+      href="../assets/images/favicon.ico"
+      sizes="32x32"
+    />
+    <link rel="apple-touch-icon" href="../assets/images/favicon.ico" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="../index.html">Victor Chidera</a>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              🌙
+            </button>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="project-detail">
+      <div class="container">
+        <a href="../projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-header">
+          <h1>SaaS Product Platform</h1>
+          <p class="project-subtitle">
+            Scalable cloud-based software solution with multi-tenant
+            architecture, real-time analytics, and comprehensive admin dashboard
+          </p>
+
+          <div class="project-meta">
+            <div class="meta-item"><strong>Timeline:</strong> 8 weeks</div>
+            <div class="meta-item">
+              <strong>Role:</strong> Full Stack Developer
+            </div>
+            <div class="meta-item"><strong>Status:</strong> In Development</div>
+          </div>
+
+          <div class="project-links-header">
+            <a href="#" target="_blank" class="project-link live-demo">
+              📱 App Demo
+            </a>
+            <a href="#" target="_blank" class="project-link source-code">
+              💻 Source Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-showcase">
+            <img
+              src="../assets/images/saas-product.png"
+              alt="SaaS Product Platform Screenshot"
+              class="project-hero-image"
+            />
+          </div>
+
+          <div class="project-details-grid">
+            <div class="detail-section">
+              <h2>Project Overview</h2>
+              <p>
+                A comprehensive Software-as-a-Service platform built with modern
+                cloud-native architecture. This multi-tenant solution provides
+                businesses with powerful tools for project management, team
+                collaboration, and data analytics in a secure, scalable
+                environment.
+              </p>
+              <p>
+                The platform features role-based access control, real-time
+                notifications, automated billing, and comprehensive reporting
+                capabilities. Designed to handle thousands of concurrent users
+                while maintaining optimal performance.
+              </p>
+            </div>
+
+            <div class="detail-section">
+              <h2>Technologies Used</h2>
+              <div class="tech-stack">
+                <div class="tech-category">
+                  <h3>Frontend</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Socket.io Client</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">Redux Toolkit</span>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h3>Backend</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Redis</span>
+                    <span class="tech-tag">JWT</span>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h3>Infrastructure & Services</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">AWS EC2</span>
+                    <span class="tech-tag">Docker</span>
+                    <span class="tech-tag">Stripe API</span>
+                    <span class="tech-tag">SendGrid</span>
+                    <span class="tech-tag">CloudWatch</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Key Features</h2>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <h4>🏢 Multi-tenant Architecture</h4>
+                  <p>
+                    Secure data isolation between organizations with shared
+                    infrastructure and customizable workspaces for each tenant
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>📊 Real-time Analytics</h4>
+                  <p>
+                    Live dashboard with interactive charts, KPI tracking, and
+                    customizable reports with data export capabilities
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>💳 Subscription Management</h4>
+                  <p>
+                    Flexible billing system with multiple pricing tiers,
+                    automated invoicing, and secure payment processing via
+                    Stripe
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>🔐 Role-based Access Control</h4>
+                  <p>
+                    Granular permissions system with custom roles, team
+                    management, and audit logging for security compliance
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>🔔 Real-time Notifications</h4>
+                  <p>
+                    WebSocket-based notification system with in-app alerts,
+                    email digests, and mobile push notifications
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>📱 Progressive Web App</h4>
+                  <p>
+                    Offline functionality, push notifications, and app-like
+                    experience across all devices and platforms
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>App Architecture</h2>
+              <div class="architecture-grid">
+                <div class="arch-item">
+                  <h4>Frontend Architecture</h4>
+                  <ul>
+                    <li>Micro-frontend architecture with module federation</li>
+                    <li>Component library with Storybook documentation</li>
+                    <li>Progressive Web App with service workers</li>
+                    <li>Real-time updates with WebSocket connections</li>
+                    <li>Responsive design with mobile-first approach</li>
+                  </ul>
+                </div>
+                <div class="arch-item">
+                  <h4>Backend Services</h4>
+                  <ul>
+                    <li>Microservices architecture with API gateway</li>
+                    <li>Event-driven architecture with message queues</li>
+                    <li>Database per tenant with shared schema</li>
+                    <li>Redis caching for session management</li>
+                    <li>Background job processing with queues</li>
+                  </ul>
+                </div>
+                <div class="arch-item">
+                  <h4>Security & Performance</h4>
+                  <ul>
+                    <li>OAuth 2.0 and JWT authentication</li>
+                    <li>Rate limiting and DDoS protection</li>
+                    <li>Data encryption at rest and in transit</li>
+                    <li>Load balancing with auto-scaling</li>
+                    <li>Comprehensive monitoring and logging</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Development Process</h2>
+              <div class="process-steps">
+                <div class="process-step">
+                  <h4>1. Requirements & Architecture</h4>
+                  <p>
+                    Conducted stakeholder workshops, defined technical
+                    specifications, and designed cloud architecture with
+                    scalability and security in mind
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>2. Backend Development</h4>
+                  <p>
+                    Implemented microservices, database design, API development,
+                    and integration with third-party services including Stripe
+                    and SendGrid
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>3. Frontend Development</h4>
+                  <p>
+                    Built responsive UI components, implemented state
+                    management, integrated real-time features, and optimized for
+                    performance
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>4. Testing & Deployment</h4>
+                  <p>
+                    Comprehensive testing strategy including unit, integration,
+                    and end-to-end tests. CI/CD pipeline setup and cloud
+                    deployment
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Technical Challenges & Solutions</h2>
+              <div class="challenges-list">
+                <div class="challenge-item">
+                  <h4>Multi-tenant Data Isolation</h4>
+                  <p>
+                    Optimized React Native components and used platform-specific
+                    code where necessary to ensure smooth performance on both
+                    iOS and Android devices.
+                  </p>
+                </div>
+                <div class="challenge-item">
+                  <h4>Real-time Scalability</h4>
+                  <p>
+                    Implemented robust offline-first architecture with conflict
+                    resolution for seamless data sync when connection is
+                    restored.
+                  </p>
+                </div>
+                <div class="challenge-item">
+                  <h4>Subscription Billing Complexity</h4>
+                  <p>
+                    Used Victory Native charts with custom animations and
+                    gesture handling for interactive and responsive data
+                    displays.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Future Enhancements</h2>
+              <div class="enhancements-list">
+                <div class="enhancement-item">
+                  <h4>Wearable Integration</h4>
+                  <p>
+                    Connect with Apple Watch, Fitbit, and other wearables for
+                    automatic activity tracking and heart rate monitoring.
+                  </p>
+                </div>
+                <div class="enhancement-item">
+                  <h4>AI Personal Trainer</h4>
+                  <p>
+                    Implement machine learning algorithms to provide
+                    personalized workout recommendations and form correction.
+                  </p>
+                </div>
+                <div class="enhancement-item">
+                  <h4>Advanced Analytics</h4>
+                  <p>
+                    Add predictive analytics for plateau detection, recovery
+                    time optimization, and personalized training insights.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Learning Outcomes</h2>
+              <div class="learning-grid">
+                <div class="learning-item">
+                  <h4>Mobile Development</h4>
+                  <p>
+                    Mastered React Native development and cross-platform
+                    optimization techniques
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Data Visualization</h4>
+                  <p>
+                    Learned to create engaging and informative charts for mobile
+                    applications
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Firebase Integration</h4>
+                  <p>
+                    Gained expertise in real-time databases, authentication, and
+                    cloud functions
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Performance Optimization</h4>
+                  <p>
+                    Developed skills in mobile app performance tuning and memory
+                    management
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Victor Chidex. Built with 💜 and code.</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/VictorChidex1"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <span>🐙</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/victor-chidera-255526b9"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <span>💼</span>
+          </a>
+          <a
+            href="https://twitter.com/your-profile"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <span>🐦</span>
+          </a>
+          <a href="mailto:ronclifft@gmail.com" aria-label="Email">
+            <span>📧</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

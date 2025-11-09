@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker App | Victor Chidera</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.ico" />
+    <link
+      rel="alternate icon"
+      type="image/png"
+      href="../assets/images/favicon.ico"
+      sizes="32x32"
+    />
+    <link rel="apple-touch-icon" href="../assets/images/favicon.ico" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="../index.html">Victor Chidera</a>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              🌙
+            </button>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="project-detail">
+      <div class="container">
+        <a href="../projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-header">
+          <h1>Fitness Tracker App</h1>
+          <p class="project-subtitle">
+            Comprehensive mobile fitness application for tracking workouts,
+            nutrition, and progress with beautiful data visualization and
+            personalized insights
+          </p>
+
+          <div class="project-meta">
+            <div class="meta-item"><strong>Timeline:</strong> 8 weeks</div>
+            <div class="meta-item">
+              <strong>Role:</strong> Mobile Developer & UI Designer
+            </div>
+            <div class="meta-item"><strong>Status:</strong> Prototype</div>
+          </div>
+
+          <div class="project-links-header">
+            <a href="#" target="_blank" class="project-link live-demo">
+              📱 App Demo
+            </a>
+            <a href="#" target="_blank" class="project-link source-code">
+              💻 Source Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-showcase">
+            <img
+              src="../assets/images/Fitness-Tracker-App.png"
+              alt="Fitness Tracker App Screenshot"
+              class="project-hero-image"
+            />
+          </div>
+
+          <div class="project-details-grid">
+            <div class="detail-section">
+              <h2>Project Overview</h2>
+              <p>
+                A feature-rich mobile fitness application designed to help users
+                achieve their health and fitness goals through comprehensive
+                tracking, personalized recommendations, and motivational
+                features. The app combines workout logging, nutrition tracking,
+                and progress analytics in an intuitive, user-friendly interface.
+              </p>
+              <p>
+                Built with React Native for cross-platform compatibility, the
+                app delivers native-like performance on both iOS and Android
+                devices while maintaining a consistent user experience.
+              </p>
+            </div>
+
+            <div class="detail-section">
+              <h2>Technologies Used</h2>
+              <div class="tech-stack">
+                <div class="tech-category">
+                  <h3>Mobile Framework</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Expo</span>
+                    <span class="tech-tag">React Navigation</span>
+                    <span class="tech-tag">Redux Toolkit</span>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h3>Backend & Storage</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Firestore</span>
+                    <span class="tech-tag">Firebase Auth</span>
+                    <span class="tech-tag">Cloud Functions</span>
+                    <span class="tech-tag">Storage</span>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h3>UI & Data Visualization</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">React Native Paper</span>
+                    <span class="tech-tag">Victory Native</span>
+                    <span class="tech-tag">Lottie Animations</span>
+                    <span class="tech-tag">React Native Reanimated</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Key Features</h2>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <h4>💪 Workout Tracking</h4>
+                  <p>
+                    Log exercises, sets, reps, and weights with custom workout
+                    routines and exercise library with proper form guidance
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>📊 Progress Analytics</h4>
+                  <p>
+                    Beautiful charts and graphs showing strength gains, body
+                    measurements, and workout consistency over time
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>🍎 Nutrition Tracking</h4>
+                  <p>
+                    Comprehensive food database with calorie counting, macro
+                    tracking, and meal planning capabilities
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>🎯 Goal Setting</h4>
+                  <p>
+                    Set and track fitness goals with milestone celebrations and
+                    personalized achievement system
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>🏆 Social Features</h4>
+                  <p>
+                    Share achievements, follow friends, and participate in
+                    fitness challenges for motivation
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>🔔 Smart Reminders</h4>
+                  <p>
+                    Push notifications for workout schedules, hydration
+                    reminders, and goal progress updates
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>App Architecture</h2>
+              <div class="architecture-grid">
+                <div class="arch-item">
+                  <h4>Frontend Architecture</h4>
+                  <ul>
+                    <li>Component-based React Native architecture</li>
+                    <li>Redux for global state management</li>
+                    <li>Custom hooks for reusable logic</li>
+                    <li>Navigation stack for seamless user flow</li>
+                    <li>Optimized for both iOS and Android</li>
+                  </ul>
+                </div>
+                <div class="arch-item">
+                  <h4>Data Management</h4>
+                  <ul>
+                    <li>Firebase Firestore for real-time data</li>
+                    <li>Offline-first approach with sync capabilities</li>
+                    <li>Local storage for performance optimization</li>
+                    <li>Data validation and error handling</li>
+                    <li>Secure user authentication</li>
+                  </ul>
+                </div>
+                <div class="arch-item">
+                  <h4>Performance & UX</h4>
+                  <ul>
+                    <li>Smooth animations with Reanimated</li>
+                    <li>Optimized image loading and caching</li>
+                    <li>Minimal bundle size with code splitting</li>
+                    <li>Accessibility features implemented</li>
+                    <li>Dark/light theme support</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Development Process</h2>
+              <div class="process-steps">
+                <div class="process-step">
+                  <h4>1. Planning & Design</h4>
+                  <p>
+                    Created detailed wireframes, established database schema,
+                    and defined API endpoints. Conducted market research for
+                    feature prioritization.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>2. Backend Development</h4>
+                  <p>
+                    Implemented RESTful APIs, database models, authentication
+                    system, and payment integration. Focused on security and
+                    scalability from the start.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>3. Frontend Development</h4>
+                  <p>
+                    Built React components, implemented state management, and
+                    created responsive UI. Integrated with backend APIs and
+                    third-party services.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>4. Testing & Optimization</h4>
+                  <p>
+                    Comprehensive testing including unit tests, integration
+                    tests, and user acceptance testing. Performance optimization
+                    and security auditing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Technical Challenges & Solutions</h2>
+              <div class="challenges-list">
+                <div class="challenge-item">
+                  <h4>Cross-Platform Performance</h4>
+                  <p>
+                    Optimized React Native components and used platform-specific
+                    code where necessary to ensure smooth performance on both
+                    iOS and Android devices.
+                  </p>
+                </div>
+                <div class="challenge-item">
+                  <h4>Offline Data Synchronization</h4>
+                  <p>
+                    Implemented robust offline-first architecture with conflict
+                    resolution for seamless data sync when connection is
+                    restored.
+                  </p>
+                </div>
+                <div class="challenge-item">
+                  <h4>Complex Data Visualization</h4>
+                  <p>
+                    Used Victory Native charts with custom animations and
+                    gesture handling for interactive and responsive data
+                    displays.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Future Enhancements</h2>
+              <div class="enhancements-list">
+                <div class="enhancement-item">
+                  <h4>Wearable Integration</h4>
+                  <p>
+                    Connect with Apple Watch, Fitbit, and other wearables for
+                    automatic activity tracking and heart rate monitoring.
+                  </p>
+                </div>
+                <div class="enhancement-item">
+                  <h4>AI Personal Trainer</h4>
+                  <p>
+                    Implement machine learning algorithms to provide
+                    personalized workout recommendations and form correction.
+                  </p>
+                </div>
+                <div class="enhancement-item">
+                  <h4>Advanced Analytics</h4>
+                  <p>
+                    Add predictive analytics for plateau detection, recovery
+                    time optimization, and personalized training insights.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Learning Outcomes</h2>
+              <div class="learning-grid">
+                <div class="learning-item">
+                  <h4>Mobile Development</h4>
+                  <p>
+                    Mastered React Native development and cross-platform
+                    optimization techniques
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Data Visualization</h4>
+                  <p>
+                    Learned to create engaging and informative charts for mobile
+                    applications
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Firebase Integration</h4>
+                  <p>
+                    Gained expertise in real-time databases, authentication, and
+                    cloud functions
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Performance Optimization</h4>
+                  <p>
+                    Developed skills in mobile app performance tuning and memory
+                    management
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Victor Chidex. Built with 💜 and code.</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/VictorChidex1"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <span>🐙</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/victor-chidera-255526b9"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <span>💼</span>
+          </a>
+          <a
+            href="https://twitter.com/your-profile"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <span>🐦</span>
+          </a>
+          <a href="mailto:ronclifft@gmail.com" aria-label="Email">
+            <span>📧</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

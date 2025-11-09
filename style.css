@@ -1447,3 +1447,90 @@ body.dark-mode .project-subtitle {
 .project-link.view-details:hover {
   background: #5a52d5;
 }
+
+/* Architecture Grid */
+.architecture-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.arch-item {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #0ea5e9;
+}
+
+.arch-item h4 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.arch-item ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.arch-item li {
+  padding: 0.3rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.arch-item li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #6c63ff;
+}
+
+/* Enhancements List */
+.enhancements-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.enhancement-item {
+  padding: 1.5rem;
+  background: #f0f9ff;
+  border-radius: 8px;
+  border-left: 4px solid #38bdf8;
+}
+
+.enhancement-item h4 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Learning Grid */
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.learning-item {
+  background: #f0fdf4;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.learning-item h4 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Dark mode styles */
+body.dark-mode .arch-item,
+body.dark-mode .enhancement-item,
+body.dark-mode .learning-item {
+  background: #3d3d3d;
+}
+
+body.dark-mode .arch-item h4,
+body.dark-mode .enhancement-item h4,
+body.dark-mode .learning-item h4 {
+  color: #ffffff;
+}

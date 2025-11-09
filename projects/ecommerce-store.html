@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Store | Victor Chidera</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.ico" />
+    <link
+      rel="alternate icon"
+      type="image/png"
+      href="../assets/images/favicon.ico"
+      sizes="32x32"
+    />
+    <link rel="apple-touch-icon" href="../assets/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <a href="../index.html">Victor Chidera</a>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li>
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              aria-label="Toggle dark mode"
+            >
+              🌙
+            </button>
+          </li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <section class="project-detail">
+      <div class="container">
+        <a href="../projects.html" class="back-link">← Back to Projects</a>
+
+        <div class="project-header">
+          <h1>E-Commerce Store</h1>
+          <p class="project-subtitle">
+            Full-featured online shopping platform with modern UI/UX, secure
+            payments, and comprehensive admin dashboard
+          </p>
+
+          <div class="project-meta">
+            <div class="meta-item"><strong>Timeline:</strong> 6 weeks</div>
+            <div class="meta-item">
+              <strong>Role:</strong> Full Stack Developer
+            </div>
+            <div class="meta-item"><strong>Status:</strong> In Development</div>
+          </div>
+
+          <div class="project-links-header">
+            <a href="#" target="_blank" class="project-link live-demo">
+              🌐 Live Demo
+            </a>
+            <a href="#" target="_blank" class="project-link source-code">
+              💻 Source Code
+            </a>
+          </div>
+        </div>
+
+        <div class="project-content">
+          <div class="project-showcase">
+            <img
+              src="../assets/images/E-Commerce-Store.png"
+              alt="E-Commerce Store Screenshot"
+              class="project-hero-image"
+            />
+          </div>
+
+          <div class="project-details-grid">
+            <div class="detail-section">
+              <h2>Project Overview</h2>
+              <p>
+                A comprehensive e-commerce solution built from scratch with
+                modern web technologies. This platform provides a seamless
+                shopping experience with advanced features like real-time
+                inventory management, secure payment processing, and
+                personalized user recommendations.
+              </p>
+              <p>
+                The store includes both customer-facing features and a powerful
+                admin dashboard for managing products, orders, and analytics.
+                Built with scalability in mind to handle growing product
+                catalogs and user traffic.
+              </p>
+            </div>
+
+            <div class="detail-section">
+              <h2>Technologies Used</h2>
+              <div class="tech-stack">
+                <div class="tech-category">
+                  <h3>Frontend</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Redux Toolkit</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">React Router</span>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h3>Backend</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Mongoose</span>
+                    <span class="tech-tag">JWT</span>
+                  </div>
+                </div>
+                <div class="tech-category">
+                  <h3>Payment & Services</h3>
+                  <div class="tech-tags">
+                    <span class="tech-tag">Stripe API</span>
+                    <span class="tech-tag">Cloudinary</span>
+                    <span class="tech-tag">Nodemailer</span>
+                    <span class="tech-tag">Redis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Key Features</h2>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <h4>🛒 Shopping Cart & Checkout</h4>
+                  <p>
+                    Persistent cart functionality with guest checkout options
+                    and multiple payment methods including Stripe integration
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>🔍 Advanced Product Filtering</h4>
+                  <p>
+                    Multi-criteria filtering by category, price range, ratings,
+                    and product attributes with real-time search
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>📱 Responsive Design</h4>
+                  <p>
+                    Mobile-first approach ensuring seamless shopping experience
+                    across all devices and screen sizes
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>👤 User Authentication</h4>
+                  <p>
+                    Secure JWT-based authentication with role-based access
+                    control for customers and administrators
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>📊 Admin Dashboard</h4>
+                  <p>
+                    Comprehensive dashboard for managing products, orders,
+                    customers, and viewing sales analytics
+                  </p>
+                </div>
+                <div class="feature-item">
+                  <h4>⭐ Product Reviews & Ratings</h4>
+                  <p>
+                    Customer review system with photo uploads and verified
+                    purchase badges
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Architecture & Implementation</h2>
+              <div class="architecture-grid">
+                <div class="arch-item">
+                  <h4>Frontend Architecture</h4>
+                  <ul>
+                    <li>Component-based React architecture</li>
+                    <li>Redux for state management</li>
+                    <li>Custom hooks for reusable logic</li>
+                    <li>Responsive design with Tailwind CSS</li>
+                    <li>Progressive Web App features</li>
+                  </ul>
+                </div>
+                <div class="arch-item">
+                  <h4>Backend Services</h4>
+                  <ul>
+                    <li>RESTful API design</li>
+                    <li>MVC architecture pattern</li>
+                    <li>Database optimization with indexing</li>
+                    <li>File upload with Cloudinary</li>
+                    <li>Email notifications system</li>
+                  </ul>
+                </div>
+                <div class="arch-item">
+                  <h4>Security & Performance</h4>
+                  <ul>
+                    <li>JWT authentication middleware</li>
+                    <li>Input validation and sanitization</li>
+                    <li>Rate limiting for API endpoints</li>
+                    <li>Redis caching for frequent queries</li>
+                    <li>Image optimization and lazy loading</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Development Process</h2>
+              <div class="process-steps">
+                <div class="process-step">
+                  <h4>1. Planning & Design</h4>
+                  <p>
+                    Created detailed wireframes, established database schema,
+                    and defined API endpoints. Conducted market research for
+                    feature prioritization.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>2. Backend Development</h4>
+                  <p>
+                    Implemented RESTful APIs, database models, authentication
+                    system, and payment integration. Focused on security and
+                    scalability from the start.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>3. Frontend Development</h4>
+                  <p>
+                    Built React components, implemented state management, and
+                    created responsive UI. Integrated with backend APIs and
+                    third-party services.
+                  </p>
+                </div>
+                <div class="process-step">
+                  <h4>4. Testing & Optimization</h4>
+                  <p>
+                    Comprehensive testing including unit tests, integration
+                    tests, and user acceptance testing. Performance optimization
+                    and security auditing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Technical Challenges & Solutions</h2>
+              <div class="challenges-list">
+                <div class="challenge-item">
+                  <h4>Real-time Inventory Management</h4>
+                  <p>
+                    Implemented optimistic locking and database transactions to
+                    prevent overselling during high-traffic periods and
+                    concurrent purchases.
+                  </p>
+                </div>
+                <div class="challenge-item">
+                  <h4>Secure Payment Processing</h4>
+                  <p>
+                    Integrated Stripe with proper error handling, webhook
+                    verification, and PCI compliance measures to ensure secure
+                    transactions.
+                  </p>
+                </div>
+                <div class="challenge-item">
+                  <h4>Performance Optimization</h4>
+                  <p>
+                    Implemented Redis caching for frequently accessed data,
+                    image optimization, and code splitting to improve load times
+                    and user experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Future Enhancements</h2>
+              <div class="enhancements-list">
+                <div class="enhancement-item">
+                  <h4>AI-Powered Recommendations</h4>
+                  <p>
+                    Implement machine learning algorithms for personalized
+                    product recommendations based on user behavior and purchase
+                    history.
+                  </p>
+                </div>
+                <div class="enhancement-item">
+                  <h4>Multi-vendor Support</h4>
+                  <p>
+                    Expand platform to support multiple vendors with individual
+                    storefronts, inventory management, and sales analytics.
+                  </p>
+                </div>
+                <div class="enhancement-item">
+                  <h4>Progressive Web App</h4>
+                  <p>
+                    Add offline capabilities, push notifications, and app-like
+                    experience with service workers and web app manifest.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="detail-section">
+              <h2>Learning Outcomes</h2>
+              <div class="learning-grid">
+                <div class="learning-item">
+                  <h4>Full-Stack Development</h4>
+                  <p>
+                    Gained expertise in building complete web applications from
+                    database design to UI implementation
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Payment Integration</h4>
+                  <p>
+                    Mastered secure payment processing and financial transaction
+                    handling
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Performance Optimization</h4>
+                  <p>
+                    Learned advanced techniques for optimizing both frontend and
+                    backend performance
+                  </p>
+                </div>
+                <div class="learning-item">
+                  <h4>Security Best Practices</h4>
+                  <p>
+                    Implemented comprehensive security measures for e-commerce
+                    applications
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 Victor Chidex. Built with 💜 and code.</p>
+        <div class="social-links">
+          <a
+            href="https://github.com/VictorChidex1"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <span>🐙</span>
+          </a>
+          <a
+            href="https://linkedin.com/in/victor-chidera-255526b9"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <span>💼</span>
+          </a>
+          <a
+            href="https://twitter.com/your-profile"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <span>🐦</span>
+          </a>
+          <a href="mailto:ronclifft@gmail.com" aria-label="Email">
+            <span>📧</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="../script.js"></script>
+  </body>
+</html>
